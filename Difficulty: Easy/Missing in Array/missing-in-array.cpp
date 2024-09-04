@@ -12,16 +12,13 @@ class Solution {
 
     // Note that the size of the array is n-1
     int missingNumber(int n, vector<int>& arr) {
-        int total_sum = n * (n + 1) / 2;
-    
-    // Calculate the sum of elements in the array
-    int arr_sum = 0;
-    for (int num : arr) {
-        arr_sum += num;
-    }
-    
-    // The missing element is the difference between the expected sum and the actual sum
-    return total_sum - arr_sum;
+        int total_sum = n * (n+1) /2;
+        int array_sum = 0;
+        for(int num : arr)
+        {
+            array_sum += num;
+        }
+        return total_sum - array_sum;
         // Your code goes here
     }
 };
