@@ -6,16 +6,14 @@ class Solution {
     vector<int> farMin(vector<int>& arr) {
         int n = arr.size();
         vector<int> result(n, -1);
-        vector<int> stack;
-
         for (int i = 0; i < n; ++i) {
-            while (!stack.empty() && arr[stack.back()] > arr[i]) {
-                result[stack.back()] = i;
-                stack.pop_back();
+            for (int j = n - 1; j > i; --j) {
+                if (arr[j] < arr[i]) {
+                    result[i] = j;
+                    break;
+                }
             }
-            stack.push_back(i);
         }
-
         return result;
     }
 };
