@@ -4,17 +4,18 @@ using namespace std;
 class Solution {
   public:
     vector<int> farMin(vector<int>& arr) {
-        // code here
         int n = arr.size();
-        vector<int> ans(n, -1);
-        for(int i = 0; i < n; i++){
-            for(int j = n - 1; j > i; j--){
-                if(arr[j] < arr[i]){
-                    ans[i] = j;
-                    break;
-                }
+        vector<int> result(n, -1);
+        vector<int> stack;
+
+        for (int i = 0; i < n; ++i) {
+            while (!stack.empty() && arr[stack.back()] > arr[i]) {
+                result[stack.back()] = i;
+                stack.pop_back();
             }
+            stack.push_back(i);
         }
-        return ans;
+
+        return result;
     }
 };
