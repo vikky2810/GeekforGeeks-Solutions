@@ -5,3 +5,6 @@ All solutions have been automatically generated using the GfG To GitHub tool, en
 ### 30 August, 2025
 - [View Solutions](August-2025/.md)
 
+### 31 August, 2025
+- [View Solutions](August-2025/.md)
+
