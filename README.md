@@ -23,3 +23,6 @@ All solutions have been automatically generated using the GfG To GitHub tool, en
 ### 05 September, 2025
 - [View Solutions](September-2025/.md)
 
+### 06 September, 2025
+- [View Solutions](September-2025/.md)
+
