@@ -41,3 +41,6 @@ All solutions have been automatically generated using the GfG To GitHub tool, en
 ### 11 September, 2025
 - [View Solutions](September-2025/.md)
 
+### 12 September, 2025
+- [View Solutions](September-2025/.md)
+
